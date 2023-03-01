@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[*Bài tập] Bài 1</title>
+</head>
+<hr>
+<body>
+
+<script>
+    let temp = +prompt("Nhập giá trị nhiệt độ hiện tại:");
+    while(temp<=20 || temp>=100)
+    {
+        if(temp <= 20)
+        {
+            alert("Tăng nhiệt độ");
+        }
+        if(temp >= 100)
+        {
+            alert("Giảm nhiệt độ");
+        }
+        temp= +prompt("Nhập giá trị nhiệt độ hiện tại:");
+    }
+    document.write("Nhiệt độ bình thường");
+
+</script>
+</body>
+</html>

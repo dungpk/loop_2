@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[*Bài tập] Bài 1</title>
+</head>
+<hr>
+<body>
+
+<script>
+
+    let value1 =1,value2=1,valueSum =0;
+    let check_number =0;
+    for(let i=1;;i++)
+    {
+        if(i==1||i==2){valueSum=1;}
+        value1 = value2;
+        value2 = valueSum
+        valueSum = value1+value2;
+        if(valueSum%5==0){
+            document.write(valueSum)
+            check_number =1;
+        }
+        if(check_number ==1)
+        {
+            break;
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[*Bài tập] Bài 1</title>
+</head>
+<hr>
+<body>
+    <button onclick="guessNumber()">Bắt đầu</button>
+<script>
+    function guessNumber()
+    {
+        let numberDefault = 4;
+        let numberCurrent = 0;
+        let entryNumber = 3;
+        let entryNumberCurrent = 0;
+        while(entryNumberCurrent<entryNumber)
+        {
+            numberCurrent = prompt("Nhập giá trị mà bạn đoán :");
+            if(numberCurrent == numberDefault)
+            {
+                alert("Bạn đã nhập đúng giá trị cần tìm")
+                break;
+            }
+            if(numberCurrent < numberDefault){
+                alert("Giá trị bạn nhập nhỏ hơn giá trị cần đoán");
+            }else alert("Giá trị bạn nhập lớn hơn giá trị cần đoán");
+            entryNumberCurrent++;
+            if(entryNumberCurrent == entryNumber)
+            {
+                alert("Bạn đã nhập quá số lần");
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
